@@ -7,4 +7,4 @@ https://www.banack.me/google-adwords-preview
 
 ## Built on
 * [Skeleton](http://getskeleton.com/)
-* Peeking at the Google Source Code :^)
+* Peeking at the Google.com source code :^)

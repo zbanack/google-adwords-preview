@@ -1,0 +1,108 @@
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.container {
+	width: 75%;
+	min-width:400px;
+	min-height:400px;
+	margin: 0 auto;
+}
+
+.goog-row {
+	height:400px;
+}
+
+p.goog {
+	padding:0;
+	margin:0;
+}
+
+.goog {
+	font-family: 'Arial', sans-serif;
+	font-weight: 400;
+}
+
+.goog-title {
+	color: rgb(26, 13, 171);
+	font-size:18px;
+	line-height: 23.9333px;
+}
+
+.goog-link, .goog-arr {
+	color: rgb(0, 102, 33);
+}
+
+.goog-link {
+	display:inline-block;
+	font-size: 14px;
+	padding:0;
+	padding-top:1px;
+}
+
+.goog-desc {
+	color: rgb(84, 84, 84);
+	font-size: 13px;
+	line-height:20.0167px;
+	overflow-wrap: break-word;
+}
+
+.goog-ad {
+	background-color: rgb(255, 255, 255);
+	border-bottom-color: rgb(0, 102, 33);
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+
+	border-left-color: rgb(0, 102, 33);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: rgb(0, 102, 33);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: rgb(0, 102, 33);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-top-style: solid;
+	border-top-width: 1px;
+
+	color: rgb(0, 102, 33);
+
+	font-size: 11px;
+	line-height: 11px;
+
+	margin-left: 1px;
+	margin-right: 6px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	padding-right: 3px;
+	padding-top: 1px;
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+
+.goog-arr {
+	padding-left:4px;
+    position:relative;
+    top:-1px;
+}
+
+#goog-i-desc {
+	resize:none;
+}
+
+h1 {
+	font-size:32px;
+}

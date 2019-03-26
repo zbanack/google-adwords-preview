@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+    
+    <head>
+    <meta charset="utf-8" />
+    <title>Real-time Google Adwords previewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Real-time rendering of how your Google AdWords text ad may appear on Google Search results.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script src="js/demo.js"></script>
+
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+    <body onload="render(); evt();">
+
+    <div class="container">
+        <h1>Google Adwords Text Ad Preview</h1>
+        <p>Fill out the fields below to see a real-timer rendering of a replica Google Adwords text ad. Please note that this utility may produce false results and should be used only as a reference. Developed by <a href="https://www.zackbanack.com/" title="Zack Banack" target="_blank">Zack Banack</a> for RIT SEMA. <a href="https://www.github.com/zbanack/google-adwords-preview" title="Github" target="_blank">View on Github</a>.</p>
+        <hr />
+        <div class="row goog-row">
+            <div class="four columns">
+            <label for="goog-i-title">Title</label>
+            <input type="text" class="u-full-width goog-i" id="goog-i-title" value="2020 Colors - Your Color Catalog">
+            <label for="goog-i-link">URL</label>
+            <input type="text" class="u-full-width goog-i" id="goog-i-link" value="https://www.2020colours.com/">
+            <label for="goog-i-desc">Description</label>
+            <textarea type="text" class="u-full-width goog-i" id="goog-i-desc">Color info, brand and advert usage, schemes, web dev code, design tips, and hex, RGB, CMYK, HSL conversions.</textarea>
+            <label for="goog-i-kwd">Keyword search (accepts quotes)</label>
+            <input type="text" class="u-full-width goog-i" id="goog-i-kwd" value='color design "and advert"'>
+        </div>
+        <div class="eight columns">
+            <p class="goog goog-title" id="goog-o-title"></p>
+            <span class="goog goog-ad">Ad</span><p class="goog goog-link" id="goog-o-link">https://www.speedtest.net/</p><span class="goog goog-arr">&#9207;</span>
+            <p class="goog goog-desc" id="goog-o-desc">Test your Internet connection bandwidth to locations around the world with this interactive broadband speed test from Ookla.</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -41,4 +41,9 @@ function render() {
 	title_o.innerHTML = title_i.value;
 	link_o.innerHTML = link_i.value;
 	desc_o.innerHTML = embold(desc_i.value, kwds);
+
+	// limiting
+	document.getElementById('lim-title').innerHTML = title_i.value.length + '/60';
+	document.getElementById('lim-link').innerHTML = link_i.value.length + '/45';
+	document.getElementById('lim-desc').innerHTML = desc_i.value.length + '/150';
 }

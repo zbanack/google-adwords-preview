@@ -106,3 +106,14 @@ p.goog {
 h1 {
 	font-size:32px;
 }
+
+.lims {
+    font-size:12px;
+    color: rgba(0, 0, 0, 0.5);
+    margin:0;
+    padding:0;
+    font-weight:normal;
+    margin-top:2px;
+    display:inline-block;
+    float:right;
+}

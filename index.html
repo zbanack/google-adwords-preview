@@ -15,21 +15,35 @@
     <link rel="stylesheet" type="text/css" href="style/normalize.css">
     <link rel="stylesheet" type="text/css" href="style/skeleton.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91441927-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-91441927-1');
+</script>
+
 </head>
     <body onload="render(); evt();">
 
     <div class="container">
-        <h1>Google Adwords Text Ad Preview</h1>
-        <p>Fill out the fields below to see a real-timer rendering of a replica Google Adwords text ad. Please note that this utility may produce false results and should be used only as a reference. Developed by <a href="https://www.zackbanack.com/" title="Zack Banack" target="_blank">Zack Banack</a> for RIT SEMA. <a href="https://www.github.com/zbanack/google-adwords-preview" title="Github" target="_blank">View on Github</a>.</p>
+        <h1>Google AdWords Text Ad Preview</h1>
+        <p>Fill out the fields below to see a real-time rendering of a replica Google AdWords text ad. Please note that this utility may produce false results and should be used only as a reference. Developed by <a href="https://www.zackbanack.com/" title="Zack Banack" target="_blank">Zack Banack</a> for RIT SEMA. <a href="https://www.github.com/zbanack/google-adwords-preview" title="Github" target="_blank">View on Github</a>.</p>
         <hr />
         <div class="row goog-row">
             <div class="four columns">
-            <label for="goog-i-title">Title</label>
-            <input type="text" class="u-full-width goog-i" id="goog-i-title" value="2020 Colors - Your Color Catalog">
-            <label for="goog-i-link">URL</label>
-            <input type="text" class="u-full-width goog-i" id="goog-i-link" value="https://www.2020colours.com/">
-            <label for="goog-i-desc">Description</label>
-            <textarea type="text" class="u-full-width goog-i" id="goog-i-desc">Color info, brand and advert usage, schemes, web dev code, design tips, and hex, RGB, CMYK, HSL conversions.</textarea>
+            <label for="goog-i-title">Title<span class="lims" id="lim-title"></span></label>
+            <input type="text" class="u-full-width goog-i" id="goog-i-title" maxlength="60" value="2020 Colors - Your Color Catalog">
+            
+            <label for="goog-i-link">URL<span class="lims" id="lim-link"></span></label>
+            <input type="text" class="u-full-width goog-i" id="goog-i-link" maxlength="45" value="https://www.2020colours.com/">
+            
+            <label for="goog-i-desc">Description<span class="lims" id="lim-desc"></span></label>
+            <textarea type="text" class="u-full-width goog-i" id="goog-i-desc" maxlength="150">Color info, brand and advert usage, schemes, web dev code, design tips, and hex, RGB, CMYK, HSL conversions.</textarea>
+            
             <label for="goog-i-kwd">Keyword search (accepts quotes)</label>
             <input type="text" class="u-full-width goog-i" id="goog-i-kwd" value='color design "and advert"'>
         </div>

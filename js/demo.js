@@ -70,6 +70,8 @@ function render() {
 	subs_o.innerHTML = subs(subs_i.value.replace(/ +(?= )/g,'').replace(/, /g, ',').split(','));
 	desc_o.innerHTML = embold(desc_i.value, kwds);
 
+	document.getElementById('goog-o-ratings-str').innerHTML = 'Rating for ' + link_i.value.replace(/(^\w+:|^)\/\//, '').replace(/\/$/, "").replace(/^(www\.)/,"") + ': 4.6 - 656 reviews';
+
 	// limiting
 	document.getElementById('lim-title').innerHTML = title_i.value.length + '/60';
 	document.getElementById('lim-link').innerHTML = link_i.value.length + '/45';

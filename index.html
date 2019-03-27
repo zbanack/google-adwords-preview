@@ -3,7 +3,7 @@
     
     <head>
     <meta charset="utf-8" />
-    <title>Real-time Google Adwords previewer</title>
+    <title>Real-time Google AdWords previewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Real-time rendering of how your Google AdWords text ad may appear on Google Search results.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +39,7 @@
             <input type="text" class="u-full-width goog-i" id="goog-i-title" maxlength="60" value="2020 Colors - Your Color Catalog">
             
             <label for="goog-i-link">URL<span class="lims" id="lim-link"></span></label>
-            <input type="text" class="u-full-width goog-i" id="goog-i-link" maxlength="45" value="https://www.2020colours.com/">
+            <input type="text" class="u-full-width goog-i" id="goog-i-link" maxlength="45" value="https://www.2020colors.com/">
             
             <label for="goog-i-desc">Description<span class="lims" id="lim-desc"></span></label>
             <textarea type="text" class="u-full-width goog-i" id="goog-i-desc" maxlength="150">Color info, brand and advert usage, schemes, web dev code, design tips, and hex, RGB, CMYK, HSL conversions.</textarea>
@@ -47,7 +47,7 @@
             <label for="goog-i-phone">Phone (optional)</label>
             <input type="text" class="u-full-width goog-i" id="goog-i-phone" maxlength="15" value="(555) 555-2424">
 
-            <input type="checkbox" id="goog-i-ratings" onclick="toggle_ratings()">
+            <input type="checkbox" id="goog-i-ratings" onclick="toggle_ratings()" checked>
             <label for="goog-i-ratings" style="width:50%; display:inline-block;">Display ratings</label>
 
             <label for="goog-i-subs">Subpages (optional, comma separated)</label>
@@ -62,7 +62,7 @@
             <span class="goog goog-ad">Ad</span><p class="goog goog-link" id="goog-o-link"></p><span class="goog goog-arr">&#9207;</span><span class="goog goog-phone" id="goog-o-phone"></span>
             <div id="goog-o-ratings-cont">
                 <div class="goog goog-ratings" id="goog-o-ratings">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <div class="goog goog-ratings-str">Rating for 2020colours.com: 4.6 - 656 reviews</div><br/>
+                <div class="goog goog-ratings-str" id="goog-o-ratings-str"></div><br/>
             </div>
             <p class="goog goog-desc" id="goog-o-desc"></p>
             <div id="goog-o-subs"></div>

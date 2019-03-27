@@ -27,7 +27,7 @@
 </script>
 
 </head>
-    <body onload="render(); evt();">
+    <body onload="render(); toggle_ratings(); evt();">
 
     <div class="container">
         <h1>Google AdWords Text Ad Preview</h1>
@@ -43,23 +43,38 @@
             
             <label for="goog-i-desc">Description<span class="lims" id="lim-desc"></span></label>
             <textarea type="text" class="u-full-width goog-i" id="goog-i-desc" maxlength="150">Color info, brand and advert usage, schemes, web dev code, design tips, and hex, RGB, CMYK, HSL conversions.</textarea>
-            
+
+            <label for="goog-i-phone">Phone (optional)</label>
+            <input type="text" class="u-full-width goog-i" id="goog-i-phone" maxlength="15" value="(555) 555-2424">
+
+            <input type="checkbox" id="goog-i-ratings" onclick="toggle_ratings()">
+            <label for="goog-i-ratings" style="width:50%; display:inline-block;">Display ratings</label>
+
+            <label for="goog-i-subs">Subpages (optional, comma separated)</label>
+            <input type="text" class="u-full-width goog-i" id="goog-i-subs" maxlength="60" value="Learn More, About, Contact">
+
             <label for="goog-i-kwd">Keyword search (accepts quotes)</label>
-            <input type="text" class="u-full-width goog-i" id="goog-i-kwd" value='color design "and advert"'>
+            <input type="text" class="u-full-width goog-i" id="goog-i-kwd" value='color design "and advert"' maxlength="50">
         </div>
         <div class="eight columns">
+            <p class="goog goog-res">About 7,380,000 results (0.51 seconds)</p><br />
             <p class="goog goog-title" id="goog-o-title"></p>
-            <span class="goog goog-ad">Ad</span><p class="goog goog-link" id="goog-o-link"></p><span class="goog goog-arr">&#9207;</span>
+            <span class="goog goog-ad">Ad</span><p class="goog goog-link" id="goog-o-link"></p><span class="goog goog-arr">&#9207;</span><span class="goog goog-phone" id="goog-o-phone"></span>
+            <div id="goog-o-ratings-cont">
+                <div class="goog goog-ratings" id="goog-o-ratings">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <div class="goog goog-ratings-str">Rating for 2020colours.com: 4.6 - 656 reviews</div><br/>
+            </div>
             <p class="goog goog-desc" id="goog-o-desc"></p>
+            <div id="goog-o-subs"></div>
             
             <!-- Adjacent ads -->
-            <br />
+            <div class="goog-padding"></div>
             <p class="goog goog-title">Excepteur sint occaecat cupidatat non proident</p>
             <span class="goog goog-ad">Ad</span><p class="goog goog-link">https://www.google.com/</p><span class="goog goog-arr">&#9207;</span>
             <p class="goog goog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
             <!-- Adjacent ads -->
-            <br />
+            <div class="goog-padding"></div>
             <p class="goog goog-title">Sed ut perspiciatis unde omnis iste</p>
             <span class="goog goog-ad">Ad</span><p class="goog goog-link">https://www.google.com/</p><span class="goog goog-arr">&#9207;</span>
             <p class="goog goog-desc">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>

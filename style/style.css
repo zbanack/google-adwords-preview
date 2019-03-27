@@ -85,12 +85,11 @@ p.goog {
 
 	margin-left: 1px;
 	margin-right: 6px;
-	padding-bottom: 0px;
+
 	padding-left: 2px;
 	padding-right: 3px;
 	padding-top: 1px;
-	vertical-align: baseline;
-	white-space: nowrap;
+	padding-bottom: 0px;
 }
 
 .goog-arr {
@@ -116,4 +115,65 @@ h1 {
     margin-top:2px;
     display:inline-block;
     float:right;
+}
+
+.goog-res {
+	color:rgb(119, 119, 119);
+	font-size: 13px;
+	padding-left: 16px;
+	padding-right: 8px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.goog-phone {
+	color: rgb(84, 84, 84);
+	font-size: 13px;
+	margin-left: 8px;
+    position:relative;
+}
+
+.goog-sub {
+	color: rgb(26, 13, 171);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 20.0167px;
+	text-align: left;
+	text-decoration: none;
+	text-decoration-color: rgb(26, 13, 171);
+	text-decoration-line: none;
+	text-decoration-style: solid;
+}
+
+.goog-sub-div {
+	position:relative;
+	margin-left:2px;
+	margin-right:0px;
+	top:2px;
+	color:rgb(84, 84, 84);
+}
+
+.goog-padding {
+	height:24px;
+}
+
+.goog-ratings {
+	line-height:20px;
+	font-size:16px;
+	letter-spacing: -2px;
+	color:#e7711b;
+	display:inline-block;
+}
+
+.goog-ratings-str {
+	color: rgb(119, 119, 119);
+	font-size: 13px;
+	line-height: 20px;
+	display:inline-block;
+}
+
+#goog-o-ratings-cont {
+	margin:0;
+	margin-top:-2px;
+	padding:0;
 }
